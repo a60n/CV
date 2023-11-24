@@ -1,178 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        body {
-            font-family: "Arial", sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .cv-container {
-            display: flex;
-            background-color: #8cc63f;
-            border-radius: 5px;
-            overflow: hidden;
-            width: 800px;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        }
-
-        .left-side {
-            background-color: #808080;
-            width: 35%;
-            padding: 20px;
-            color: white;
-        }
-
-        .right-side {
-            width: 65%;
-            padding: 20px;
-            color: #333;
-        }
-
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto;
-        }
-
-        .table {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-        }
-
-        .left-table {
-            width: 35%;
-            padding-right: 20px;
-            color: white;
-        }
-
-        .right-table {
-            width: 65%;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        table, th, td {
-            border: 1px solid #333;
-        }
-
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #808080;
-            color: white;
-        }
-
-        .section-title {
-            font-weight: bold;
-            font-size: 20px;
-            margin: 20px 0;
-        }
-
-        .section-text {
-            font-size: 16px;
-            line-height: 1.5;
-        }
-    </style>
-</head>
-<body>
-    <div class="cv-container">
-        <div class="left-side">
-            <img class="profile-pic" src="your-profile-pic.jpg" alt="Your Name">
-            <div class="table">
-                <div class="left-table">
-                    <table>
-                        <tr>
-                            <th>Contact</th>
-                        </tr>
-                        <tr>
-                            <td>Name:</td>
-                        </tr>
-                        <tr>
-                            <td>Number:</td>
-                        </tr>
-                        <tr>
-                            <td>Email:</td>
-                        </tr>
-                        <tr>
-                            <td>School:</td>
-                        </tr>
-                    </table>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anime Clothing</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+        
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
                 </div>
-                <div class="right-table">
-                    <table>
-                        <tr>
-                            <th>&nbsp;</th>
-                        </tr>
-                        <tr>
-                            <td>Your Name</td>
-                        </tr>
-                        <tr>
-                            <td>Your Number</td>
-                        </tr>
-                        <tr>
-                            <td>your.email@example.com</td>
-                        </tr>
-                        <tr>
-                            <td>Your School Name</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="section-title">Skills & Languages</div>
-            <div class="section-text">
-                <ul>
-                    <li>Skill 1</li>
-                    <li>Skill 2</li>
-                    <li>Skill 3</li>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
-                <p>Languages: Language 1, Language 2</p>
-            </div>
+            </nav>
+        </header>
+
+    <section id="hero">
+        <h1>Anime Clothing</h1>
+        <p>Welcome to Anime Clothing! Your one-stop shop for the latest and greatest anime-inspired outfits. From cosplay outfits to casual wear, we have something for everyone.</p>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Search for your favorite anime...">
+            <button type="submit">Search</button>
         </div>
+    </section>
 
-        <div class="right-side">
-            <div class="section-title">Professional Summary</div>
-            <div class="section-text">
-                Your professional summary goes here. You can write about your work experience, educational background, and other relevant details.
-            </div>
+    <section id="designs">
+        <h2>Featured Designs</h2>
+        <p>Discover our extensive collection of anime-inspired clothing and accessories. Browse through our catalog and find the perfect piece to complete your anime-inspired wardrobe.</p>
 
-            <div class="section-title">Education</div>
-            <div class="section-text">
-                School: Your School Name<br>
-                Degree: Your Degree<br>
-                Year: Year of Graduation
-            </div>
-
-            <div class="section-title">Skills</div>
-            <div class="section-text">
-                Describe your skills in more detail here. Mention your strengths and areas of expertise.
-            </div>
-
-            <div class="section-title">Personal Statement</div>
-            <div class="section-text">
-                Write about your goals, aspirations, and anything else you'd like to include in your CV.
-            </div>
-
-            <div class="section-title">Audio & Video</div>
-            <div class="section-text">
-                You can embed audio and video content here to showcase your skills or projects.
-            </div>
+        <div class="design-gallery">
+            <img src="assets/imgs/red.jpg" alt="Anime Outfit 1">
+            <img src="assets/imgs/anime.jpg" alt="Anime Outfit 2">
+            <img src="assets/imgs/123.jpg" alt="Anime Outfit 3">
         </div>
-    </div>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <p>We offer a wide variety of products, including anime outfits, baby clothes, baggy outfits, and tech outfits. Shop our latest collections and discover new ways to express your love for anime.</p>
+
+        <div class="product-gallery">
+            <img src="assets/imgs/baggy.jpg" alt="Anime Outfit 1">
+            <img src="assets/imgs/product1.jpg" alt="Anime Outfit 2">
+            <img src="assets/imgs/outfit1.jpg" alt="Anime Outfit 3">
+            <img src="assets/imgs/outfit2.jpg" alt="Anime Outfit 4" style="height: 56.50%;">
+            <img src="assets/imgs/outfit3.jpg" alt="Anime Outfit 5" style="height: 56.50%;">
+        </div>
+    </section>
+
+    <section id="footer">
+        <p>&copy; 2022 Anime Clothing. All rights reserved.</p>
+    </section>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
