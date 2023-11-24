@@ -26,8 +26,9 @@ nav ul li a:hover {
     color: #007bff;
 }
 
-.menu-icon {
-    display: none;
+.menu-icon i {
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .search-bar {
@@ -98,31 +99,6 @@ section p {
 @media (max-width: 768px) {
     .nav-links {
         display: none;
-    }
-
-    .menu-icon {
-        display: block;
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        cursor: pointer;
-    }
-
-    .search-bar {
-        margin-top: 0;
-    }
-}
-
-/* ... (unchanged styles) */
-
-.menu-icon i {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
         flex-direction: column;
         position: absolute;
         top: 60px; /* Adjust as needed based on your header height */
@@ -136,5 +112,7 @@ section p {
     .nav-links li {
         text-align: center;
         margin-bottom: 10px;
-   
+    }
+
 }
+
